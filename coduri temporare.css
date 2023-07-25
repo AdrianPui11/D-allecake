@@ -1,0 +1,12 @@
+﻿body
+{
+}
+.cos1 {
+    margin-left: 100px;
+    margin-top: 30px;
+    background-image: linear-gradient(to bottom right, green, yellow);
+    border-radius: 3px;
+    height: 40px;
+    width: 150px;
+    margin-right: 0px;
+}

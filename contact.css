@@ -1,0 +1,65 @@
+﻿body {
+    background-image: url(contact1.jpg);
+    width:100%;
+ margin:auto;
+ height:1000px;
+ background-repeat:no-repeat;
+}
+.harta {
+    padding-bottom: 50%;
+    position: relative;
+    margin-left: 100px;
+    padding-top:300px;
+    padding-left:200px;
+    
+}
+
+.contact iframe {
+        height: 400px;
+        width: 600px;
+        
+    }
+.title-contact-area {
+    background: none;
+    width: 300px;
+    height: 500px;
+    margin-left: 250px;
+    padding-top: 300px;
+    background-color: none;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    font-size:30px;
+}
+.contact{width:100%;
+         display:flex;
+         flex-wrap:nowrap;
+         
+}
+input{padding:10px;
+      border-radius:2px;
+      margin:10px;
+      background-color:lightgrey;
+      color:black;
+      width:250px;
+      border:none;
+}
+textarea {
+    padding: 10px;
+    border-radius: 2px;
+    margin: 10px;
+    background-color: lightgrey;
+    color: black;
+    width:250px;
+    border:none;
+}
+button{width:280px;
+       height:30px;
+       background-color:burlywood;
+       text-size-adjust:auto;
+       border:none;
+}
+address{color:lightgrey;
+        font-size:18px;
+}

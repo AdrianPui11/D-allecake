@@ -1,0 +1,198 @@
+﻿body {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.principal {
+    width: 100%;
+    height: 200px;
+}
+
+header {
+    background-color: #FFEFD5;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    margin-top: 0px;
+}
+
+.navbar {
+    margin-top: 10px;
+    position: fixed;
+    width: 100%;
+    float: left;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 40px;
+}
+
+li a {
+    color: black;
+}
+
+    li a:hover {
+        color: salmon;
+        text-decoration: underline solid 1.5px;
+    }
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    right: 0px;
+    display: none;
+}
+
+    ul li:hover > ul,
+    ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 100px;
+        text-align: center;
+        padding-top: 20px;
+        background: unset;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+        border-style: none;
+    }
+
+a {
+    text-decoration: none;
+}
+
+.carusel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+    .carusel-slide.active {
+        opacity: 1;
+    }
+
+    .carusel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255,255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+    .carousel-buttons:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .carousel-buttons.left {
+        left: 10px;
+    }
+
+    .carousel-buttons.right {
+        right: 10px;
+    }
+
+    .carousel-buttons span {
+        font-size: 24px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .carousel-buttons.left span::before {
+        content: "<";
+    }
+
+    .carousel-buttons.right span::before {
+        content: ">"
+    }
+
+.carusel-container {
+    position: relative;
+    width: 380px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+
+.prezentare {
+    width: 350px;
+    height: 300px;
+    margin-top: -400px;
+    margin-left: 500px;
+}
+
+.titlu {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-style: italic;
+    font-size: 30px;
+    height: 50px;
+}
+
+.detalii {
+    width: 550px;
+}
+
+.numar {
+    width: 80px;
+}
+
+.cos {
+    width: 100%;
+    height: 25px;
+    display: inline-block;
+    flex-wrap: nowrap;
+}
+
+.cos1 {
+    margin-left: 500px;
+    background-image: linear-gradient(to top right, #C669F0, #81E7F5);
+    border-radius: 15px;
+    margin-right: 20px;
+    width: 170px;
+    height: 35px;
+    border: none;
+    box-shadow: 2px 2px 30px #1e7a3d;
+    font-size: 20px;
+}
+
+    .cos1:hover {
+        background: linear-gradient(to left, #81E7F5 0%, #C669F0 100%);
+        color: white;
+    }
